@@ -38,10 +38,10 @@ html, body { overflow-x: hidden; }
 }
 
 /* Nav */
-.nav { border-bottom:1px solid var(--line); backdrop-filter: blur(4px); position: sticky; top:0; z-index: 20; background:rgba(11,14,17,0.7); }
+.nav { border-bottom:1px solid var(--line); backdrop-filter: blur(4px); position: sticky; top:0; z-index: 20; background:#ffffff; }
 .nav-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; }
 .brand { font-weight:800; letter-spacing:.3px; }
-.nav-links { display:flex; gap:16px; font-weight:600; font-size:14px; }
+.nav-links { display:flex; gap:16px; font-weight:600; font-size:14px; color:var(--primary)}
 .btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:700; background:var(--primary); color:#ffffff; }
 .btn-alt { background:var(--accent); color:var(--primary); }
 .btn:hover { opacity: 0.9; }
