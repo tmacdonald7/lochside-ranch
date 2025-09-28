@@ -8,6 +8,34 @@ body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+:root{
+  --max: 1100px;           /* page width cap */
+  --gutter: 20px;          /* side padding on all screens */
+}
+
+/* Prevent accidental horizontal scrollbars */
+html, body { overflow-x: hidden; }
+
+/* Universal page container / gutters */
+.container{
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Section vertical rhythm */
+.section{ padding: 40px 0; }
+
+/* Tighter spacing on small screens, a bit wider gutters on very large screens */
+@media (max-width: 480px){
+  :root{ --gutter: 16px; }
+  .section{ padding: 28px 0; }
+  header.hero{ padding: 44px 0 24px; }
+}
+@media (min-width: 1400px){
+  :root{ --gutter: 28px; }
+}
+
 /* Nav */
 .nav { border-bottom:1px solid var(--line); backdrop-filter: blur(4px); position: sticky; top:0; z-index: 20; background:rgba(11,14,17,0.7); }
 .nav-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; }
