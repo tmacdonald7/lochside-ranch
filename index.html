@@ -7,6 +7,8 @@
   <meta name="description" content="Private, pet-friendly camping & cabin rentals near Lake Conroe — less than a mile from a private boat ramp, and 30 minutes from the Texas Renaissance Festival." />
   <link rel="canonical" href="https://lochsideranch.com/" />
   <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" /> <!-- ✅ external CSS -->
+
   <meta property="og:title" content="Lochside Ranch | Texas Renaissance Festival Camping & Lake Conroe Retreats" />
   <meta property="og:description" content="Stay under the trees, grill by the fire, and get on the water. Premium, pet-friendly camping near Lake Conroe — ~30 minutes to the Texas Renaissance Festival." />
   <meta property="og:type" content="website" />
@@ -20,52 +22,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NCPR4V88');</script>
   <!-- End Google Tag Manager -->
-
-  <style>
-    :root { --bg:#0b0e11; --text:#e8edf2; --muted:#b9c6d3; --card:#12161b; --line:#1f2630; --accent:#7cc4ff; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-    /* Top nav */
-    .nav { border-bottom:1px solid var(--line); backdrop-filter: blur(4px); position: sticky; top:0; z-index: 20; background:rgba(11,14,17,0.7); }
-    .nav-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; }
-    .brand { font-weight:800; letter-spacing:.3px; }
-    .nav-links { display:flex; gap:16px; font-weight:600; font-size:14px; }
-    .btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:700; background:#fff; color:#0b0e11; }
-    .btn-alt { background:var(--accent); color:#051019; }
-
-    /* Hero */
-    header.hero { padding:60px 0 36px; background:linear-gradient(180deg, rgba(124,196,255,0.12), rgba(0,0,0,0)); }
-    .hero h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 10px; }
-    .hero p.lede { font-size: clamp(16px, 2.3vw, 20px); color: var(--muted); margin: 0 0 16px; }
-    .hero-cta { display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
-
-    /* Value props */
-    .cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:14px; margin-top:20px; }
-    .card { background: var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
-    .card h3 { margin: 0 0 8px; font-size: 18px; }
-    .muted { color: var(--muted); }
-
-    /* Two-column sections */
-    .section { padding: 40px 0; border-top:1px solid var(--line); }
-    .grid-2 { display:grid; grid-template-columns: 1fr; gap:18px; }
-    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1.1fr .9fr; } }
-    .panel { background: var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; }
-
-    /* Form */
-    form { background: var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin: 16px 0; }
-    label { display:block; font-weight:600; margin:10px 0 6px; }
-    input, textarea { width:100%; padding:10px; background:#0f1317; border:1px solid #27303b; color:var(--text); border-radius:8px; }
-    button { margin-top:12px; padding:12px 16px; border:0; border-radius:10px; background:var(--accent); color:#051019; font-weight:800; cursor:pointer; }
-    .help { font-size:12px; opacity:.8; margin-top:6px; }
-
-    /* Footer */
-    footer { border-top:1px solid var(--line); padding:24px 0; font-size:14px; opacity:.9; }
-    .footer-links { display:flex; gap:12px; flex-wrap:wrap; }
-  </style>
 
   <!-- JSON-LD: LodgingBusiness -->
   <script type="application/ld+json">
@@ -97,7 +53,7 @@
   }
   </script>
 
-  <!-- JSON-LD: WebSite with SearchAction (future-proof) -->
+  <!-- JSON-LD: WebSite -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -123,9 +79,11 @@
     <div class="container nav-inner">
       <div class="brand">Lochside Ranch</div>
       <div class="nav-links">
-        <a href="#stay">Stay</a>
-        <a href="#lake">Lake Conroe</a>
-        <a href="#trf">Texas Renaissance Festival</a>
+        <a href="/stay.html">Stay</a>
+        <a href="/lake-conroe.html">Lake Conroe</a>
+        <a href="/texas-renaissance-festival.html">Texas Renaissance Festival</a>
+        <a href="/dogs-and-groups.html">Dogs & Groups</a>
+        <a href="/about.html">About</a>
         <a href="#contact" class="btn btn-alt">Request Dates</a>
       </div>
     </div>
@@ -138,26 +96,26 @@
       <p class="lede">Tree-covered, pet-friendly stays less than a mile from Lake Conroe — with private boat ramp access — just 30 minutes from TRF.</p>
       <div class="hero-cta">
         <a class="btn" href="#contact">Request Your Dates</a>
-        <a class="btn btn-alt" href="#stay">Plan Your Stay</a>
+        <a class="btn btn-alt" href="/stay.html">Plan Your Stay</a>
       </div>
 
       <!-- Value props -->
       <div class="cards" style="margin-top:22px">
         <div class="card">
           <h3>Texas Renaissance Festival</h3>
-          <p class="muted">~30 minutes away. Quiet, premium retreat after a full festival day.</p>
+          <p class="muted">~30 minutes away. Quiet, premium retreat after a full festival day. <a href="/texas-renaissance-festival.html">Learn more</a></p>
         </div>
         <div class="card">
           <h3>Lake Conroe Access</h3>
-          <p class="muted">Private boat ramp nearby, guided boat rides & fishing, full-day rentals.</p>
+          <p class="muted">Private boat ramp nearby, guided boat rides & fishing, full-day rentals. <a href="/lake-conroe.html">See experiences</a></p>
         </div>
         <div class="card">
           <h3>Pet-Friendly</h3>
-          <p class="muted">Fenced spaces for dogs so they can roam while you relax by the fire.</p>
+          <p class="muted">Fenced spaces for dogs so they can roam while you relax by the fire. <a href="/dogs-and-groups.html">Bring your dogs</a></p>
         </div>
         <div class="card">
           <h3>Cabin & Tent Options</h3>
-          <p class="muted">Reserve the Lochside Cabin or camp beneath the trees. Bathroom & shower access.</p>
+          <p class="muted">Reserve the Lochside Cabin or camp beneath the trees. Bathroom & shower access. <a href="/stay.html">Explore lodging</a></p>
         </div>
       </div>
     </div>
@@ -169,12 +127,12 @@
       <div class="panel">
         <h2>Step Into the Story</h2>
         <p class="muted">Lochside Ranch was born out of resilience — a retreat in the woods where firelight, fresh air, and family come first. Every project here — from cabins to boats to campfires — is part of a journey of building freedom and focus. Now, you’re invited to step into the story with us.</p>
+        <a class="btn" href="/about.html">Learn More</a>
       </div>
       <div class="panel">
         <h2>Where We Are</h2>
         <p class="muted">Montgomery, TX — less than a mile to a private boat ramp on Lake Conroe and ~30 minutes to the Texas Renaissance Festival.</p>
         <div style="border-radius:10px; overflow:hidden; border:1px solid var(--line);">
-          <!-- Simple map embed; swap for a custom map or static image later -->
           <iframe
             title="Lochside Ranch area map"
             width="100%" height="220" style="border:0;"
@@ -183,41 +141,6 @@
             src="https://www.google.com/maps?q=Montgomery,TX%2077356&output=embed">
           </iframe>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experiences -->
-  <section class="section" id="stay">
-    <div class="container grid-2">
-      <div class="panel">
-        <h2>Stay Under the Trees</h2>
-        <p class="muted">Tent camping under the trees or reserve the Lochside Cabin (studio guest setup). Bathroom & shower on site.</p>
-        <ul class="muted">
-          <li>Lochside Cabin (guest-ready studio)</li>
-          <li>Tent camping beneath the trees</li>
-          <li>Campfire area & BBQ pits</li>
-          <li>Pet-friendly with fenced areas</li>
-        </ul>
-      </div>
-      <div class="panel" id="lake">
-        <h2>Get on the Water</h2>
-        <p class="muted">Guided boat rides on Lake Conroe, fishing trips for licensed anglers, or full-day boat rentals with launch & pull-out support.</p>
-        <ul class="muted">
-          <li>Private boat ramp access (nearby)</li>
-          <li>Guided rides & fishing trips</li>
-          <li>Full-day rentals with launch/pull-out</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRF highlight -->
-  <section class="section" id="trf">
-    <div class="container">
-      <div class="panel">
-        <h2>30 Minutes to the Texas Renaissance Festival</h2>
-        <p class="muted">Make Lochside Ranch your festival basecamp. Unwind in a quiet, tree-covered setting after a day of adventure — then return rested and ready for more.</p>
       </div>
     </div>
   </section>
@@ -233,12 +156,8 @@
         data-netlify="true"
         netlify-honeypot="bot-field"
         onsubmit="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'form_submit'});">
-        <!-- Required hidden input for Netlify Forms -->
         <input type="hidden" name="form-name" value="contact" />
-        <!-- Honeypot -->
-        <p style="display:none">
-          <label>Don’t fill this out: <input name="bot-field" /></label>
-        </p>
+        <p style="display:none"><label>Don’t fill this out: <input name="bot-field" /></label></p>
 
         <label for="name">Your Name</label>
         <input id="name" name="name" type="text" required />
@@ -265,18 +184,17 @@
     <div class="container">
       <div class="footer-links" style="margin-bottom:8px;">
         <a href="/">Home</a> ·
-        <a href="#stay">Stay</a> ·
-        <a href="#lake">Lake Conroe</a> ·
-        <a href="#trf">Texas Renaissance Festival</a> ·
+        <a href="/stay.html">Stay</a> ·
+        <a href="/lake-conroe.html">Lake Conroe</a> ·
+        <a href="/texas-renaissance-festival.html">Texas Renaissance Festival</a> ·
+        <a href="/dogs-and-groups.html">Dogs & Groups</a> ·
+        <a href="/about.html">About</a> ·
         <a href="#contact">Contact</a>
       </div>
       <div>© <span id="year"></span> Lochside Ranch • 18961 Walding Rd, Montgomery, TX 77356 • <a href="mailto:camp@lochsideranch.com">camp@lochsideranch.com</a></div>
       <div class="muted">Less than a mile to a private Lake Conroe boat ramp • ~30 minutes to the Texas Renaissance Festival</div>
     </div>
-    <script>
-      // simple year updater
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
