@@ -112,7 +112,8 @@
 
   <main class="container" id="contact">
     <h2>Contact / Request Your Dates</h2>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+      onsubmit="window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'contact_form_submit'});">
       <!-- Required hidden input for Netlify Forms -->
       <input type="hidden" name="form-name" value="contact" />
       <!-- Honeypot -->
